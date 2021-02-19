@@ -1,0 +1,44 @@
+Grid Container: va a ser el elemento padre que va a tener puesto un nuevo tipo de display: grid. Nos permite colocar otras 
+propiedades para manipular nuestro layaout.
+
+Grid Item: Son nuestro componentes, contenido, lo que vamos a manejar. Nuestras filas o columnas que vamos a mover a nuestro gusto.
+ Son hijos directos de grid.
+
+Grid Line: Lineas divisorias horizontales y verticales.
+
+Grid Track: Espacio entre dos líneas adyacentes. Filas y columnas.
+
+Grid Cell: Celdas, espacio en dos filas adyacentes y 2 columnas adyacentes.
+
+Grid Area: Espacio rodeado por 4 grid lines
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+Grid explicito (explicit grid) es cuando nosotros definimos el numero de filas o columnas.
+Grid implicito (implicit grid) es cuando tenemos filas o columnas que no definimos pero son parte de nuestro grid.
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+Manejando grid implícito: Cuando columnas o filas no tienen un valor explicito, es decir, cuando no asignamos valores específicos para 
+controlarlas, se ordenan de manera implícita, hay propiedades que existen para manipular nuestro gird implícito:
+
+grid-auto-flow: Con esta propiedad manipulamos el orden del grid implícito. Si ingresamos el valor column ,todo lo que sea grid 
+implícito se apilara como columna y si ingresamos row ,como fila.
+
+grid-auto-column: Con esta propiedad podemos darle valores a cada columna.
+
+grid-auto-row: Con esta propiedad podemos darle valores a cada fila.
+
+NO ESPECIFICANDO: Si yo no especifico filas o columnas, con grid-auto-row o grid-auto-column , podemos manipular todas las 
+columnas o filas.
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+Para alinear el contenido de filas y columnas:
+justify-content: valor; horizontal
+align-content: valor; vertical
+
+Pata distribuir uniformemente:
+Con space-around Los items tienen el mismo espacio a su alrededor
+Con space-evenly Hay un espacio mas homogeneo entre items
+Con space-between El primer item al inicio, el último al final

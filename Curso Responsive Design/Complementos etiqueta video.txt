@@ -1,0 +1,9 @@
+<video 
+class="HTML-video" 
+src="https://www.youtube.com/watch?v=LoKvxCSZw5w" 
+width=" " 
+height=" " 
+controls 
+autoplay 
+poster="YOUR-IMAGE.jpg">
+</video>

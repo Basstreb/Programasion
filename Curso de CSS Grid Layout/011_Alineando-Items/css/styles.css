@@ -1,0 +1,26 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    display: grid;
+    gap: 5px;
+    height: 100vh;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    /* justify-items: start end center stretch;
+    align-items: start end center stretch; */
+    justify-items: center;
+    align-items: center;
+}
+
+.item {
+    background: lightblue;
+    padding: 10px;
+    border: 1px solid red;
+}
+
+.item:nth-of-type(5) {
+    align-self: start;
+    justify-self: start;
+}

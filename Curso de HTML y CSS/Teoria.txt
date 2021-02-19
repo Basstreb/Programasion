@@ -1,0 +1,47 @@
+Notas de la clase:
+
+El Frontend es la parte visual de las páginas web 🎨
+El Backend es la parte oculta y con información sensible 👮🔏
+Las páginas web se construyen con: HTML para la estructura, CSS para los estilos y JS para las funcionalidades especiales 🌠
+Los compiladores nos dan algunas ayudan para escribir menos código repetitivo 🔑
+El backend tiene 4 funcionalidades básicas: Crear, leer, actualizar y eliminar información 🎲
+El backend se ayuda de las bases de datos para persistir la información (guardar datos o archivos por el tiempo que queramos) 
+    
+-----------------------------------------------------------------------------------------------------------------------------
+    
+Para que sirve HTML ?
+Para maquear la paginas web, definir la estructura y semántica.
+
+Para que sirve el CSS ?
+Definir reglas que ayudaran a dar forma a la estructura, definiendo donde estará cada objeto que forma y color tendrá.
+
+Para que sirve el JS ?
+Para agregarle la interactividad que queramos que el usuario realice.
+
+-----------------------------------------------------------------------------------------------------------------------------
+    
+El Frontend es la parte del software que interactúa con los usuarios, en cambio, el Backend es la parte que no puedes ver, esta oculta porque contiene la información privada o sensible de nuestros usuarios.
+
+HTML nos permite crear la estructura de la página: títulos, párrafos, menús, etc. CSS nos permite configurar los estilos del HTML, los colores, formas, posiciones, etc. Además, JavaScript (JS) se encarga de la parte funcional, nos permite conectarnos con otros servicios (como PayPal) y nos ayuda a hacer las interacciones mucho más fluidas.
+
+Los Compiladores nos ayudan a construir el frontend de nuestras páginas web de forma mucho más rápida y sencilla. En vez de escribir el mismo código una y otra vez, vamos a utilizar estas herramientas para obtener estos mismos resultados de forma automatizada.
+
+El trabajo y las operaciones del backend se pueden resumir con las siglas CRUD: Create, Read, Update y Delete. Cuando el frontend se comunica con el backend, debe indicar el tipo de operación y los datos necesarios para que todo funcione correctamente.
+
+Por ejemplo: cuando registramos un usuario, el frontend debe mandar los nombres y contraseña de este usuario para que, el backend, pueda guardar esta información en la base de datos y podamos consultarla más adelante.
+
+-----------------------------------------------------------------------------------------------------------------------------
+    
+Internet es un conjunto descentralizado de redes de comunicación interconectadas, en otras palabras, son dos (o más) computadoras que se conectan entre sí. Los Protocolos son un conjunto de reglas que hacen posible la comunicación entre diferentes elementos que forman parte de un sistema.
+
+La World Wide Web es un sistema de distribución de documentos (de hipertexto o hipermedia) interconectados y accesibles vía internet, mientras que, los Hipertextos son textos que contienen enlaces a otros textos.
+
+FTP es el protocolo de transferencia de archivos entre sistemas conectados a una red, así es cómo diferentes personas podemos compartir documentos entre nosotros.
+
+Hay algunas computadoras que solo utilizamos para entregar documentos los conocemos como servidores, en cambio, las computadoras que solo leen y reciben estos documentos los conocemos como clientes. También existe el protocolo de comunicación P2P (Peer to Peer) donde una misma computadora trabaja como servidor y cliente al mismo tiempo.
+
+La tecnología de la la información es la aplicación de ordenadores y equipos de telecomunicación para almacenar, recuperar, transmitir y manipular datos, con frecuencia, utilizado en el contexto de negocios o empresas.
+
+La Comunicación Síncrona es comunicación en tiempo real, por ejemplo, en aplicaciones de mensajería y video-chat. Sin embargo, también existe la Comunicación Asíncrona, comunicación en tiempo NO real, así funciona Gmail, puede pasar que recibamos un nuevo correo pero no lo leemos inmediatamente lo envían, por eso es comunicación asíncrona.
+
+-----------------------------------------------------------------------------------------------------------------------------

@@ -1,0 +1,123 @@
+Algunos comandos y sus funciones:
+
+git config -l : Para ver la configuracion de Git
+git config --global "" : Para hacer cambios globales de lo que necesitemos
+git config --global alias.nombrealias "comandoparaacortar" : nos crea un alias para un comando de git que queremos acortar
+alias [nombre] "lo que quieres acortar" : puedes acortar comandos largos facilmente
+**Si añades --help despues de un comando te lleva a la pagina de git y explica las funciones**
+
+-------------------llavesSSH---------------------
+eval $(ssh-agent -s) : evalua la llave
+ssh-add ~/.ssh/id_rsa : Activa la llave privada para que sea automatico
+
+----------------comandosBasicos------------------
+git init : Empieza en tu carpeta un repositorio para guardar los cambios.
+git add “nombre del archivo” : Agrega ese archivo o cambio al "Staging Area"
+git commit -m “Versión 1” : Agrega finalmente el cambio realizado y le agrega un mensaje con -m
+git add . : Agrega todos los archivos a ese Staging Area
+git commit -m “Cambios a v1” : Aplica los cambios realizados.
+git status : Muestra el estado de tu respositorio
+git status -s: lo muestra resumido
+git status -s -b: lo muestra resumido y muestra la ramagit
+git show : Muestra el historico de los cambios hechos
+git log “nombre del archivo” : Muestra el historial de ese archivo
+git push : Envia hacia un repositorio remoto
+git pull : Trae de un repositorio remoto a tu local
+
+git diff : Para comparar dos versiones
+git init . : Sube todo al repositorio
+git reset : Vuelve los archivos a como estaban en un repositorio anterior
+git reset "X" --hard/--soft : Hace que la regresion sea absoluta o si es soft que los que estan subidos al repositorio no cambien
+git log --stat : Se ven los cambios especificos en el registro
+git checkout (Version) : Traigo de vuelta cambios anteriores, puedes concretar solo un archivo
+
+git clone "url" : Trae un repositorio remoto de una url
+git push : Arriba
+git fetch : Trae actualizaciones del repositorio remoto al local
+git merge : Fusiona los traido con fetch
+git pull : Se usa pull directamente
+git commit -am : Agrega los cambios y los aplica (Solo funciona con archivos con add previos)
+
+--------------------ComandosBranch---------------
+git branch "nombre" : crea una rama
+git checkout "nombre rama" : cambio de master a la rama
+git branch : comprueba cuantas ramas hay
+git branch --all : Muestra todas todas las ramas
+git branch -d nombrerama : elimina una rama
+
+---------------------ComandosGitHub--------------
+git remote add origin "direccion" : Enlaza el repositorio con GitHub
+git remote : chequea que estemos en remoto
+git remote -v : Nos muestra la web de origin si podemos traer o enviar cosas
+git push origin master : git envia al origen la rama master
+git pull origin master : trae lo que haya en la web a la rama master
+git pull origin master --allow-unrelated-histories : Fusionar lo que hay en cada lado uniendo las historias (Contiene los commits)
+
+---------------------LogCommits------------------
+git log --all : muestra todos los commit
+git log --all --graph : te enseña las diferentes ramas
+git log --all --graph --decorate --oneline : Lo muestra mas comprimido
+
+---------------------gitTag-----------------------
+git tag -a "nombre tag" -m "Comentario" [Pegar codigo commit] : Crear tags
+git tag : ver tags
+git show-ref --tags : te enseña los tags por referencia y nombre puesto
+git tag -d "nombretag" : Elimina un tag
+git push origin :refs/tags/"nombretag" : borra el tag del origen GitHub
+
+----------------------ShowBranchs---------------
+git show-branch : muestra las ramas que existen y sus historias
+git show-branch --all : Muestra mas datos
+gitk : muestra un software de las historias de commits y branchs
+
+----------------------CloneURL------------------
+git clone URL : Copias un repositorio público de GitHub en la carpeta que estes
+
+----------------------gitIgnore-----------------
+.gitignore : un archivo que nos permite decirle que archivos ignora Git
+
+----------------------Rebase--------------------
+get rebase "rama" : pega los branches como si la rama no hubiese existido
+
+----------------------gitStash------------------
+git stash : guarda los cambios en memoria y vuelve los archivos a como estaban
+git stahs list : muestra una lista con los stash
+git stash pop : saca los cambios de la memoria y los aplica
+git stash branch nombrebranch : crea un nuevo branch y aplica esos cambios guardados en la memoria
+git stash drop : borra el ultimo stash guardado
+git stash clear : quita todos los stash creados
+
+---------------------gitClean-------------------
+git clean : borrar archivos no trackeados, no le importan las carpetas, le importan los archivos
+git clean --dry-run : simula lo que se va a borrar sin borrarlo
+git clean -f : fuerza el borrado de esos archivos
+*No borra carpetas, respeta los archivos incluidos en gitignore".
+
+---------------------gitCherry-pick-------------
+git cherry-pick codigocommit : te puedes traer un commit viejo desde cualquier rama
+*Mala practica**Usar con sabiduria*
+
+---------------------gitAmend-------------------
+git commit --amend : Agrega los cambios actuales al ultimo commit realizado
+
+--------------------GitReset/Reflog-------------
+git reflog : Se ve todo, es un log mas potenciado, se ven los head que se han descartado
+git reset idcommit : vuelve a ese commit
+git reset --SOFT idcommit : mantiene lo lo que tenias pendiente de staging
+git reset --HARD idcommit : vuelve atras eliminando los ultimos cambios
+
+--------------------gitGrep---------------------
+git grep palabra : Busca en los archivos donde has usado esa palabra o letras
+git grep -n palabra : Te dice en que lineas has usado esa palabra o letras
+git grep -c palabra : Cuenta las veces que hemos usado la palabra o letras y en que archivos
+git log -s "palabraentrecomillas" : Busca el uso de esa palabra o letras en los commits
+*Grep busca en los archivos y log en los commits*
+
+---------ComandosYRecursosColaborativos---------
+git shortlog : Es para ver cuantos commits ha hecho cada miembro del equipo
+git shortlog -sn : Muestra solo las personas que han hecho ciertos commmits
+git shortlog -sn --all : Muestra incluso los commits borrados
+git shortlog -sn --all --no-merges: Excluye los merges
+
+git blame nombrearchivo : vemos los cambios hechos a ese archivo y quien los hizo
+git blame -c nombrearchivo : Visualiza un poco mejor
