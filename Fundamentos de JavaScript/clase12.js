@@ -62,17 +62,20 @@ const MAYORIA_DE_EDAD = 18;
 
 //HEMOS PASADO DE function esMayorDeEdad (persona) -> var esMayorDeEdad = function (persona) ->  var esMayorDeEdad = (persona) =>
 
-/* var esMayorDeEdad = function (persona){
+/*const esMayorDeEdad = function (persona){
     return persona.edad >= MAYORIA_DE_EDAD;
-} */
+}*/
 
-/* var esMayorDeEdad = persona => {
+//SI HAY UN SOLO PARAMETRO PODEMOS QUITAR LOS PARENTESISS
+/*const esMayorDeEdad = persona => {
     return persona.edad >= MAYORIA_DE_EDAD;
-} */
+}*/
 
-//var esMayorDeEdad = persona => persona.edad >= MAYORIA_DE_EDAD;
+//SI ES UNA FUNCION QUE RETORNA ALGO PODEMOS QUITAR LOS CORCHETES
+//const esMayorDeEdad = persona => persona.edad >= MAYORIA_DE_EDAD;
 
 var esMayorDeEdad = ({ edad }) => edad >= MAYORIA_DE_EDAD;
+var esMenorDeEdad = persona => !esMayorDeEdad(persona);
 
 function imprimirSiEsMayorDeEdad(persona) {
     if (esMayorDeEdad(persona)) {

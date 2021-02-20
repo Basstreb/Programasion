@@ -24,7 +24,7 @@ function Desarrollador(nombre, apellido) {
     this.apellido = apellido;
 }
 
-heredaDe(Desarrollador, Persona);
+hered aDe(Desarrollador, Persona);
 
 Desarrollador.prototype.saludar = function () {
     console.log(`Hola, me llamo ${this.nombre} ${this.apellido} y soy Desarrollador`);
