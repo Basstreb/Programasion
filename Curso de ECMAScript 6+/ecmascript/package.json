@@ -1,0 +1,8 @@
+{
+  "name": "ecmascript",
+  "version": "1.0.0",
+  "description": "Entendiendo ecmascript",
+  "main": "index.js",
+  "author": "Daniel Lozano Campano <danlozcam@gmail.com>",
+  "license": "MIT"
+}

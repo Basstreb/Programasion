@@ -1,0 +1,8 @@
+Virtual DOM:
+Es una herramienta que implementa React, para darle performance y velocidad a los desarrollos.
+Tenemos una copia fiel del DOM.
+Tenemos una apliaccion creada con React la cual tiene una serie de elementos que tenemos que llenar,
+en este caso es nuestro perfil. Si tenemos que llenar estos elementos, el DOM se volvia a refrescar en
+el navegador, con Virtual DOM tenemos una copia para estos elementos. Esto hace que por ejemplo
+al cambiar algo del perfil de Twitter no tenga que refrescar toda la página.
+Al igual que si eliminamos un elemento solo se actualizaria ese elemento concreto.
