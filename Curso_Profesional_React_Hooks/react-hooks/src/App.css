@@ -1,0 +1,9 @@
+.App__Light {
+  text-align: center;
+}
+
+.App__Dark {
+  text-align: center;
+  background-color: black;
+  color: white;
+}
